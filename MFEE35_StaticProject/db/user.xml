@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+  <UserInfo>
+    <userName>a</userName>
+    <password>b</password>
+  </UserInfo>
+  <UserInfo>
+    <userName>a1</userName>
+    <password>b</password>
+  </UserInfo>
+  <UserInfo>
+    <userName>a2</userName>
+    <password>b</password>
+  </UserInfo>
+  <UserInfo>
+    <userName>a3</userName>
+    <password>b</password>
+  </UserInfo>
+</CATALOG>

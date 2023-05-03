@@ -1,0 +1,1299 @@
+body {
+  margin: 48px 0 0 0;
+  background-color: #fffae5;
+}
+
+/* ^^ index ^^*/
+.loginmodel {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 4;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 45px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  margin-top: 0;
+  /* 15% from the top and centered */
+  border: 1px solid #888;
+  width: 560px;
+  /* Could be more or less, depending on screen size */
+}
+
+#id01 .seleSL {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 560px;
+}
+
+#id01 .seleSL div {
+  text-align: center;
+  height: 2em;
+  line-height: 2em;
+  width: 280px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+#id01 .seleSL div label {
+  cursor: pointer;
+  /* pointer-events: none; */
+}
+
+#id01 .seleSL .seleL {
+  background-color: rgb(83, 132, 238);
+  color: white;
+}
+
+.modal-content.signup {
+  display: none;
+}
+
+input[type=text],
+input[type=password] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.userchkres_l {
+  display: block;
+  height: 1.5em;
+}
+
+.userchkres_s,
+.chkres_s,
+.chkres_l {
+  display: block;
+  height: 1.5em;
+  line-height: 1.5em;
+  color: red;
+}
+
+/* Set a style for all buttons */
+.modal #login {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+form .container button {
+  background-color: #04AA6D;
+}
+
+.modal button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+
+.modal-content.animate .container .cancelbtn {
+  width: 40%;
+  margin: 0;
+  margin-left: 150px;
+  padding: 10px 18px;
+  background-color: #f44336;
+  float: left;
+  position: relative;
+  top: -23px;
+}
+
+#id01 .container span {
+  position: relative;
+  top: -23px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.bighead {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 26px;
+  float: none;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate,
+.seleSL {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+/* @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+  
+    .cancelbtn {
+      width: 100%;
+    }
+  } */
+
+@media screen and (max-width: 600px) {
+
+  /* model改內容大小 5??px時會大於頁面 */
+  .modal-content.animate {
+    width: 310px;
+    height: 475px;
+  }
+
+  .modal-content.animate .container .cancelbtn {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .container button+label {
+    font-size: 12px;
+  }
+
+  #id01 .seleSL {
+    width: 310px;
+  }
+
+  #id01 .seleSL div {
+    width: 155px;
+  }
+
+  .chkres_s,
+  .chkres_l,
+  .userchkres_s,
+  .userchkres_l {
+    height: 1em;
+    line-height: 1em;
+    font-size: 14px;
+  }
+
+  .userchkres_s,
+  .userchkres_l {
+    margin-bottom: 8px;
+  }
+}
+
+/* ^^ LoginModal.css ^^ */
+/* vv TryitEditor.css vv */
+.topnav {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  /* background-color: #333; */
+  background-color: rgb(255, 73, 73);
+}
+
+.topnav>a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav>a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav>a.active {
+  /* background-color: #04AA6D;
+  color: white; */
+  background-color: white;
+  color: #f44336;
+}
+
+.topnav>.icon {
+  display: none;
+}
+
+.loginmodal button {
+  height: 48px;
+  padding: 14px 16px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 17px;
+  /* background-color: #333; */
+  background-color: rgb(255, 73, 73);
+  color: #f2f2f2;
+}
+
+.loginmodal button:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav>a:not(:first-child) {
+    display: none;
+  }
+
+  .loginmodal button {
+    display: none;
+  }
+
+  .topnav>a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive>.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive>a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .loginmodal button {
+    position: relative;
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    background-color: rgb(255, 73, 73);
+    color: #f2f2f2;
+  }
+
+  .topnav.responsive .loginmodal button:hover {
+    opacity: 1;
+    background-color: #ddd;
+    color: black;
+  }
+
+  .modal .modal-content.animate .container button {
+    background-color: #04AA6D;
+    text-align: center;
+  }
+
+  .modal .modal-content.animate .container .cancelbtn {
+    background-color: #f44336;
+  }
+
+  .container span {
+    position: relative;
+    top: -47px;
+  }
+}
+
+/* ^^ TryitEditor.css ^^ */
+/* vv container vv */
+
+.containerbody {
+  padding: 0;
+  margin: 58px 20px auto 20px;
+  /* 48+20*/
+}
+
+/* vv container commdity div vv */
+.contentdivlimitTime {
+  width: 500px;
+  height: 200px;
+  background-color: rgb(255, 73, 73);
+  border-radius: 5px;
+  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
+}
+
+.contentdivreadylimit {
+  width: 500px;
+  height: 485px;
+  background-color: black;
+  border-radius: 10px 5px 5px 5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.contentdiv {
+  width: 500px;
+  height: 200px;
+  margin: 0 auto 40px auto;
+  /* padding-top: 50px; */
+  /* border: 1px solid red; */
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+
+.readylimittitlediv {
+  display: inline-block;
+  background-color: goldenrod;
+  border-radius: 10px 1px 10px 0;
+  margin: 0;
+}
+
+.fa.fa-hourglass-1 {
+  margin-left: 20px;
+  font-size: 24px;
+  color: #fefefe;
+}
+
+.fab.fa-hotjar {
+  margin-left: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.onsaletitle {
+  display: inline-block;
+  margin: 0 0 0 10px;
+  height: 45px;
+  line-height: 45px;
+  color: #fefefe;
+}
+
+.readylimittitlediv .onsaletitle {
+  display: inline-block;
+  margin: 0 20px 0 10px;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+}
+
+.onsalelimittime {
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+  float: right;
+  color: #fefefe;
+  font-weight: bolder;
+  margin-right: 20px;
+}
+
+.onsalelimittime span {
+  display: inline-block;
+}
+
+.limitH,
+.limitM,
+.limitS {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  color: #fefefe;
+  background-color: rgb(133, 0, 0);
+  border-radius: 5px;
+  padding: 0 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.onsalelimittime span:first-child {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.onsalelimittime span:nth-child(3),
+.onsalelimittime span:nth-child(5) {
+  color: rgb(145, 74, 33);
+}
+
+.morediv {
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.morediv:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.morediv a {
+  margin: 5px;
+  color: white;
+  text-decoration-line: none;
+}
+
+
+.contentdivlimitTime .contentdivcontent {
+  box-sizing: border-box;
+  width: 490px;
+  /* height: 150px; */
+  padding-right: 20px;
+  /**增加最後一張可滾動的距離*/
+  /* position: relative;
+  float: right; */
+  display: flex;
+  margin: 0 5px 5px 5px;
+  /* top: 50px; */
+  background-color: white;
+  /* overflow-y: hidden; */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.contentdivlimitTime .contentdivcontent::-webkit-scrollbar {
+  display: none;
+}
+
+.contentcommdity {
+  scroll-snap-align: center;
+  width: 140px;
+  height: 120px;
+  margin: 15px 0 15px 20px;
+  background-color: white;
+  /* position: relative; */
+  flex: 0 0 140px;
+  border-right: 1px solid lightgray;
+}
+
+.contentcommdity:hover {
+  opacity: 0.8;
+}
+
+.contentcommdity a {
+  width: 140px;
+  height: 120px;
+  display: block;
+  background-size: 140px 120px;
+  /* text-decoration-line: none; */
+}
+
+.contentdivlimitTime .contentdivcontent .carousel-control-prev {
+  position: relative;
+  left: -1605px;
+}
+
+.contentdivlimitTime .contentdivcontent .carousel-control-next {
+  position: relative;
+  right: 1190px;
+}
+
+.contentdivlimitTime .contentdivcontent .carousel-control-prev span {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.contentdivlimitTime .contentdivcontent .carousel-control-next span {
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+.contentdivcontentmain {
+  height: 265px;
+}
+
+.contentdivreadylimit div .contentcommdity {
+  scroll-snap-align: none;
+  position: initial;
+  flex: none;
+  display: inline-block;
+}
+
+.contentdivreadylimit .contentdivcontentmain .contentcommdity {
+  height: 260px;
+  width: 490px;
+  margin: 0 5px;
+  margin-bottom: 5px;
+}
+
+.contentdivreadylimit .contentdivcontentleft,
+.contentdivreadylimit .contentdivcontentright {
+  height: 175px;
+  width: 240px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 2px;
+}
+
+.contentdivreadylimit .contentdivcontentleft .contentcommdity,
+.contentdivreadylimit .contentdivcontentright .contentcommdity {
+  height: 170px;
+  width: 240px;
+  margin: 0 5px 5px 5px;
+}
+
+
+
+
+.readylimitT {
+  width: 110px;
+  height: 24px;
+  line-height: 24px;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-style: italic;
+  border-radius: 0 0 5px 0;
+  text-align: center;
+}
+
+.readylimitT span {
+  font-size: 14px;
+}
+
+
+
+
+.contentcommdity:nth-child(1) a {
+  background-image: url(../image/commdity/CS2241.jpg);
+}
+
+.contentcommdity:nth-child(2) a {
+  background-image: url(../image/commdity/RedmiWatch2.jpg);
+}
+
+.contentcommdity:nth-child(3) a {
+  background-image: url(../image/commdity/G733_KDA.jpg);
+}
+
+.contentcommdity:nth-child(4) a {
+  background-image: url(../image/commdity/JPD02B-10L.jpg);
+}
+
+.contentcommdity:nth-child(5) a {
+  background-image: url(../image/commdity/Nokia_T20.jpg);
+}
+
+.contentcommdity:nth-child(6) a {
+  background-image: url(../image/commdity/Toshiba_Canvio_Basics_4TB.jpg);
+}
+
+.contentcommdity:nth-child(7) a {
+  background-image: url(../image/commdity/A12MT-057TW.jpg);
+}
+
+.contentcommdity:nth-child(8) a {
+  background-image: url(../image/commdity/DELL_Inspiron_3910.jpg);
+}
+
+.contentcommdity:nth-child(9) a {
+  background-image: url(../image/commdity/CANON_EOS_4000D.jpg);
+}
+
+.contentcommdity:nth-child(10) a {
+  background-image: url(../image/commdity/realme_Watch_3.jpg);
+}
+
+.containerfooter {
+  padding: 10px;
+  background-color: lightgray;
+  color: gray;
+}
+
+.containerfooter h5 {
+  margin: 10px auto;
+  font-weight: bolder;
+}
+
+.containerfooter ul {
+  padding-left: 20px;
+}
+
+.containerfooter span {
+  font-size: 14px;
+}
+
+.contentdivreadylimit .contentdivcontentmain .contentcommdity a,
+.contentdivreadylimit .contentdivcontentleft .contentcommdity a,
+.contentdivreadylimit .contentdivcontentright .contentcommdity a {
+  box-sizing: border-box;
+  background-image: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 24px;
+  position: relative;
+  top: -24px;
+  text-decoration-line: none;
+}
+
+.contentdivreadylimit .contentdivcontentmain .contentcommdity img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.rightcontent {
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  top: -60px;
+}
+
+.rightcontent p {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.rightcontent .onsaleprice {
+  color: red;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+.rightcontent .oldprice {
+  color: gray;
+  font-size: 14px;
+  text-decoration-line: line-through;
+}
+
+.contentdivreadylimit .contentdivcontentleft .contentcommdity img,
+.contentdivreadylimit .contentdivcontentright .contentcommdity img {
+  width: 105px;
+  height: 105px;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 15px 5px 15px 10px;
+}
+
+.contentdivcontentleft .rightcontent,
+.contentdivcontentright .rightcontent {
+  width: 100px;
+  height: 170px;
+  position: relative;
+  top: -10px;
+}
+
+.contentdivcontentleft .rightcontent span,
+.contentdivcontentright .rightcontent span {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.contentdivcontentleft .rightcontent .onsaleprice,
+.contentdivcontentright .rightcontent .onsaleprice {
+  font-size: 20px;
+}
+
+
+.flexrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexcol:nth-child(1),
+.flexcol:nth-child(2) {
+  flex: 50%;
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.bodyimgaid {
+  height: 170px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bodyimglong {
+  width: 610px;
+  height: 210px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bodyimg {
+  height: 210px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bodyimgaid a img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+
+}
+
+.bodyimglong a img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.bodyimg a img {
+  width: 80%;
+  height: 200px;
+  border-radius: 5px;
+}
+.bodyimg a:hover, .bodyimglong a:hover, .bodyimgaid a:hover {
+  opacity: 0.8;
+}
+
+.bodyfooter {
+  height: 300px;
+  padding: 30px 15px 30px 15px;
+  background-color: rgb(0, 71, 165);
+  color: white;
+}
+
+.footermain {
+  width: 100%;
+  height: 264px;
+  border-bottom: 1px solid white;
+  display: flex;
+  text-align: center;
+}
+
+.footermain a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.footermainlist {
+  width: 264px;
+}
+
+.footermain p {
+  margin-top: 0;
+  font-size: 24px;
+  color: white;
+  position: relative;
+  top: -5px;
+}
+
+.footermainlist i {
+  color: white;
+  font-size: 24px;
+}
+
+.footermainlist span {
+  display: block;
+  font-size: 12px;
+  color: white;
+}
+
+.footermainlist:not(:nth-child(1)) span {
+  height: 10px;
+  font-size: 14px;
+}
+
+.footermainlist:last-child a {
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+}
+
+.footermainlist:last-child a:first-child {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  background-image: url(../image/img_appQrcode.svg);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.downloadappdiv {
+  width: 180px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: orangered;
+  position: relative;
+  top: -5px;
+  margin: 0 auto 10px auto;
+}
+
+.downloadappdiv span {
+  font-size: 14px;
+}
+
+.footermainlist:last-child label {
+  margin: 0 10px;
+}
+
+.footercopyright {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.footercopyright span {
+  font-size: 14px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1500px) {
+  .flexcol:nth-child(1) {
+    flex: 38%;
+    max-width: 38%;
+  }
+
+  .flexcol:nth-child(2) {
+    flex: 37%;
+    max-width: 37%;
+  }
+
+  .flexcol:nth-child(3) {
+    flex: 25%;
+    max-width: 25%;
+    height: auto;
+    margin: 0;
+  }
+
+  .flexcol:nth-child(3) a img {
+    width: 200px;
+    height: 155px;
+  }
+
+  .flexcol:nth-child(3) a {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 1120px) {
+  .flexrow .flexcol {
+    flex: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contentdivreadylimit,
+  .contentdivlimitTime {
+    text-align: initial;
+  }
+
+  .contentdivlimitTime {
+    margin-bottom: 10px;
+  }
+
+  .bodyimgaid {
+    display: inline-block;
+  }
+
+  .bodyimgaid a img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .containerfooter {
+    width: 880px;
+  }
+
+  .bodyfooter {
+    width: 880px;
+  }
+
+  div#bs_carousel {
+    width: 500px;
+  }
+
+  /* bodyfooter */
+  .footermainlist:nth-child(1) span,
+  .footermainlist:first-child a:not(:first-child) {
+    display: none;
+  }
+
+  .footermainlist:nth-child(2) a,
+  .footermainlist:nth-child(3) a,
+  .footermainlist:nth-child(4) a,
+  .footermainlist:nth-child(5) a {
+    display: none;
+  }
+
+  .footermainlist:last-child a:first-child {
+    display: none;
+  }
+
+  .downloadappdiv {
+    display: none;
+  }
+
+  .containerfooter {
+    display: none;
+  }
+
+  .bodyfooter {
+    width: 100%;
+  }
+
+  .bodyfooter {
+    box-sizing: border-box;
+    height: auto;
+    padding: 3px
+  }
+
+  .bodyfooter * {
+    height: auto;
+    width: auto;
+    margin: 1px;
+    font-size: 12px;
+  }
+
+  .footermain {
+    display: block;
+  }
+
+  .footermainlist {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding-right: 3px;
+    border-right: 1px solid gray;
+
+  }
+
+  .footermainlist * {
+    padding: 2px;
+  }
+
+  .footermainlist:first-child a:first-child {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footermainlist p {
+    font-size: 14px;
+    height: 24px;
+    margin: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .footermainlist:last-child {
+    float: right;
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  .footercopyright span {
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contentdivlimitTime {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+
+  .bodyimgaid,
+  .bodyimglong {
+    height: auto;
+  }
+
+  .bodyimglong {
+    margin-bottom: 5px;
+  }
+
+  .bodyimgaid a {
+    height: 200px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .bodyimglong a {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 5px auto 0 auto;
+  }
+  .bodyimg {
+    height: 110px;
+  }
+  .bodyimg a img {
+    width: 90%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* containerbody */
+  .containerbody {
+    margin: 48px 1px 1px 1px;
+  }
+
+  div#bs_carousel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contentdivreadylimit {
+    margin: 0;
+    width: 100%;
+  }
+
+  .onsalelimittime {
+    margin-right: 10px;
+  }
+
+  .contentdivreadylimit .contentdivcontentmain,
+  .contentdivreadylimit .contentdivcontentleft,
+  .contentdivreadylimit .contentdivcontentright {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+  }
+
+  .contentdivreadylimit .contentdivcontentmain .contentcommdity {
+    width: 100%;
+    margin: 0;
+    border-right: 0;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft,
+  .contentdivreadylimit .contentdivcontentright {
+    box-sizing: border-box;
+    width: 49%;
+    border: 0;
+    padding: 0;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft {
+    border-left: 5px solid black;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft .contentcommdity,
+  .contentdivreadylimit .contentdivcontentright .contentcommdity {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contentdivreadylimit .contentdivcontentmain .contentcommdity img,
+  .contentdivreadylimit .contentdivcontentleft .contentcommdity img,
+  .contentdivreadylimit .contentdivcontentright .contentcommdity img {
+    width: 49%;
+    margin: 0;
+  }
+
+  .rightcontent {
+    width: 49%;
+  }
+
+  .bodyimg a img {
+    width: 90%;
+  }
+
+  /* containerbody */
+}
+
+@media screen and (max-width: 560px) {
+  .contentdivreadylimit {
+    width: 310px;
+    height: auto;
+    margin: 5px auto;
+  }
+
+  .contentdivreadylimit .onsalelimittime span {
+    display: none;
+  }
+
+  .contentdivcontentmain {
+    height: 261px;
+  }
+
+  .contentdivreadylimit .contentdivcontentmain {
+    border: 0;
+  }
+
+  .contentdivreadylimit .contentdivcontentmain .contentcommdity {
+    box-sizing: border-box;
+    width: 308px;
+    margin: 0 1px 1px 1px;
+  }
+
+  .contentdivcontentmain .contentcommdity a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .rightcontent {
+    display: none;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft,
+  .contentdivreadylimit .contentdivcontentright {
+    width: 310px;
+    height: 261px;
+    padding-left: 0;
+    display: block;
+    border: 0;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft .contentcommdity,
+  .contentdivreadylimit .contentdivcontentright .contentcommdity {
+    box-sizing: border-box;
+    width: 308px;
+    height: 260px;
+    margin: 0 1px 1px 1px;
+  }
+
+  .contentdivcontentleft .contentcommdity a,
+  .contentdivcontentright .contentcommdity a {
+    text-align: center;
+  }
+
+  .contentdivreadylimit .contentdivcontentleft .contentcommdity img,
+  .contentdivreadylimit .contentdivcontentright .contentcommdity img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* 限時特賣 */
+  .contentdivlimitTime {
+    width: 300px;
+  }
+  .contentdivlimitTime .fa.fa-hourglass-1 {
+    font-size: 20px;
+  }
+  .contentdivlimitTime h3 {
+    font-size: 16px;
+    margin-left: 1px;
+  }
+
+  .contnetdivlimitTime .onsalelimittime span:first-child {
+    font-size: 8px;
+  }
+
+  .limitH,
+  .limitM,
+  .limitS {
+    font-size: 16px;
+  }
+
+  .contentdivlimitTime .contentdivcontent {
+    width: auto;
+    /* scroll-snap-type: none; */
+  }
+
+  .contentdivlimitTime .contentdivcontent .carousel-control-next {
+    right: 1390px;
+  }
+  .contentdivlimitTime .contentdivcontent .carousel-control-prev {
+    left: -1600px;
+  }
+  /* .contentcommdity {
+    width: 100px;
+    height: 100px;
+    scroll-snap-align: start;
+    margin: 10px;
+    flex: 0 0 100px;
+  }
+  .contentcommdity a {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+}

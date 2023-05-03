@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bs.css">
+    <script src="./javascript/bs_bundel.js"></script>
+    <title>3CHouse</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">3CHouse</a>
+        <a href="#shop" class="active">Shop</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="loginmodal">
+            <!-- Button to open the modal login form -->
+            <button id="callid01btn" onclick="LogInClick()">Login</button>
+
+
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+                <span onclick="CloseModalClick()" class="close" title="Close Modal">&times;</span>
+                <div class="seleSL" onclick="SelectSL()">
+                    <div class="seleS"><label for="">Signup</label></div>
+                    <div class="seleL"><label for="">Login</label></div>
+                </div>
+                <!-- Modal Content -->
+                <div class="modal-content animate login">
+                    <div class="imgcontainer">
+                        <img src="./image/bighead.png" alt="" class="bighead">
+                    </div>
+
+                    <div class="container login">
+                        <label for="userName"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="userName" id="userName" required>
+                        <label class="userchkres_l"></label>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                        <label class="chkres_l"></label>
+                        <button id="login" onclick="LoginChk()">Login</button>
+                        <label>
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="CancelClick()" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </div>
+                <div class="modal-content animate signup">
+                    <div class="imgcontainer">
+                        <img src="./image/bighead.png" alt="" class="bighead">
+                    </div>
+
+                    <div class="container login">
+                        <label for="userName"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="userName" id="userName_s"
+                            onfocusout="chkuser()" required>
+                        <label class="userchkres_s"></label>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" id="psw_s" required>
+                        <label class="chkres_s"></label>
+                        <button id="login" onclick="SignupChk()">Signup</button>
+                        <label>
+                            <input type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="CancelClick()" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carticonnumview">
+            <span></span>
+        </div>
+        <button class="carticon" onclick="cartview()">
+            <i class="fa fa-shopping-cart"></i>
+        </button>
+
+
+    </div>
+    <!-- ↑header↑  vcontainerv -->
+    <div class="containerbody">
+        <div class="leftsidebar">
+            <div class="selectmain">
+                <div onclick="selectclass_radio()"><input type="radio" name="class" id="default"><label
+                        for="">All</label>
+                </div>
+                <div onclick="selectclass_radio()"><input type="radio" name="class" id="aboutpc"><label
+                        for="">電腦相關</label>
+                </div>
+                <div onclick="selectclass_radio()"><input type="radio" name="class" id="thirdC"><label
+                        for="">數位通訊</label>
+                </div>
+                <div onclick="selectclass_radio()"><input type="radio" name="class" id="abouthome"><label for="">家電</label>
+                </div>
+                <div onclick="selectclass_radio()"><input type="radio" name="class" id="other"><label
+                        for="">其他</label>
+                </div>
+            </div>
+            <div class="selectother">
+                <p> $ 預算推薦</p>
+                <div onclick="selectclass_checkbox()"><input type="checkbox" id="default"><label for="">All</label>
+                </div>
+                <div onclick="selectclass_checkbox()"><input type="checkbox" id="apple"><label for="">2k以下</label></div>
+                <div onclick="selectclass_checkbox()"><input type="checkbox" id="pineapple"><label for="">5k以下</label>
+                </div>
+                <div onclick="selectclass_checkbox()"><input type="checkbox" id="orange"><label for="">10k以下</label>
+                </div>
+                <div onclick="selectclass_checkbox()"><input type="checkbox" id="tomato"><label for="">30k以下</label>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middlehead">
+                <div class="searchdiv">
+                    <div class="searchdivdiv">
+                        <span></span>
+                        <input type="text" id="search" onfocusout="searchcontent()">
+                        <div class="fa fa-search" onclick=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="ssd">
+                        <img src="./image/commdity/CS2241.jpg">
+                        <span>PNY CS2241 4TB M.2 2280 PCIe 4.0 SSD固態硬碟</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$7990</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="watch">
+                        <img src="./image/commdity/RedmiWatch2.jpg">
+                        <span>Redmi Watch 2 紅米手錶/運動手錶</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$2090</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="wireless">
+                        <img src="./image/commdity/G733_KDA.jpg">
+                        <span>羅技 G733 Wireless 電競耳麥 - KDA</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$3990</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="thirdC">
+                        <img src="./image/commdity/JPD02B-10L.jpg">
+                        <span>【JJPRO 家佳寶】10L 一級能效WiFi智慧除濕機(JPD02B-10L)</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$6599</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="tablet">
+                        <img src="./image/commdity/Nokia_T20.jpg">
+                        <span>Nokia T20 平板電腦 (4G/64G)-深海藍</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$5790</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="HDD">
+                        <img src="./image/commdity/Toshiba_Canvio_Basics_4TB.jpg">
+                        <span>Toshiba Canvio Basics 黑靚潮V 4TB 2.5吋行動硬碟</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$2888</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="pc">
+                        <img src="./image/commdity/H-S500SC.jpg">
+                        <span>華碩 H-S500SC 奔騰256G SSDWin11電腦</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$11490</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="phone">
+                        <img src="./image/commdity/A12MT-057TW.jpg">
+                        <span>MSI微星 Summit E13FlipEvo A12MT-057TW</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$34900</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="pc1">
+                        <img src="./image/commdity/DELL_Inspiron_3910.jpg">
+                        <span>DELL Inspiron 3910 i7 SSD Win11電腦</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$21999</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="camera">
+                        <img src="./image/commdity/CANON_EOS_4000D.jpg">
+                        <span>CANON EOS 4000D+18-55mm III單鏡組*(中文平輸)</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$13200</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="watch2">
+                        <img src="./image/commdity/realme_Watch_3.jpg">
+                        <span>realme Watch 3 運動血氧智慧通話手錶</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$1299</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="dyson">
+                        <img src="./image/commdity/Dyson_SV18_Digital_Slim_Fluffy.jpg">
+                        <span>Dyson SV18 Digital Slim Fluffy 無線吸塵器(銀灰)</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$12900</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="printer">
+                        <img src="./image/commdity/HP_LaserJet_M111w.jpg">
+                        <span>HP LaserJet M111w 無線黑白雷射印表機 (接續M15w機款)</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$2990</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="power">
+                        <img src="./image/commdity/A1000G.jpg">
+                        <span>MSI MPG A1000G PCIE5 電源供應器</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$6590</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="screen">
+                        <img src="./image/commdity/xg27aqv.jpg">
+                        <span>ASUS ROG Strix XG27AQV 27型2K HDR電競螢幕(27型/2K/170Hz/1ms/IPS)</span>
+                    </div>
+                </div>
+                <div class="cardfooter">
+                    <div class="price"><span>$8888</span></div>
+                    <div class="cardfooterright">
+                        <div class="fa fa-plus" onclick="cartplus()"></div>
+                        <div class="amount"><span>0</span></div>
+                        <div class="fa fa-minus" onclick="cartminus()"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cartmodal">
+                <span onclick="CloseCartClick()" class="close">&times;</span>
+                <div class="cartviewface">
+
+                </div>
+            </div>
+        </div>
+        <div class="rightsidebar"></div>
+        <script src="./javascript/shop.js"></script>
+    </div>
+</body>
+
+</html>
