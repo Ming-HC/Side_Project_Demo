@@ -1,7 +1,7 @@
 # My Side Project
   <h1>Static_Demo:</h1>
     <h3>E-commerce_Static_practices: </h3>
-    <p><a href="https://ming-hc.github.io/Static_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
+    <p><a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
   <br />
   <br />
   <br />
