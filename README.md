@@ -8,7 +8,7 @@
   <br />
   <h1>Dynamic_Demo:</h1>
     <p><a href="https://forum-demo-0507-qy2ufzf3yq-de.a.run.app/">DynamicProject</a></p>
-    <span>開發中 多bug</span>
+    <span>製作中，多bug，預計每週五更新</span>
   
   
   <hr />
