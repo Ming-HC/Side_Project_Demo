@@ -231,56 +231,35 @@ function userchkres(xml, user, userchkStat, signupStat, loginStat) {
 // https://stackoverflow.com/questions/11946530/creating-an-xml-file-using-javascript
 // web cant create xml file
 
-// var targetscroll, prevtargetscroll;
-// document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next")
-// var nextnum = getComputedStyle(document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next")).right;
-// var prevnum = getComputedStyle(document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev")).left;
-// function limitIscroll() {
-//     if (event.target.className.indexOf("next") > -1) {
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next").style.right = nextnum;
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev").style.left = prevnum;
-//         if (window.innerWidth > 560) {
-//             document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: 300 });
-//         } else {
-//             console.log("here");
-//             document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: 100 });
-//         }
-//         targetscroll = document.querySelector(".contentdivcontent").scrollLeft;
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next").style.right = (Number(nextnum.split("px")[0]) - targetscroll) + "px";
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev").style.left = (Number(prevnum.split("px")[0]) + targetscroll) + "px";
-//     }
-//     if (event.target.className.indexOf("prev") > -1) {
-//         if (screen.width > 560) {
-//             document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: -300 });
-//         } else {
-//             document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: -100 });
-//         }
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next").style.right = nextnum;
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev").style.left = prevnum;
-//         targetscroll = document.querySelector(".contentdivcontent").scrollLeft;
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next").style.right = (Number(nextnum.split("px")[0]) - targetscroll) + "px";
-//         document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev").style.left = (Number(prevnum.split("px")[0]) + targetscroll) + "px";
-//     }
-// }
-
 var targetscroll, prevtargetscroll;
-// document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next")
 var nextnum = getComputedStyle(document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next")).right;
 var prevnum = getComputedStyle(document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev")).left;
-function limitIscroll() {
-    if (event.target.className.indexOf("next") > -1) {
-        if (window.innerWidth > 560) {
-            document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: 300 });
-        } else {
-            document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: 100 });
-        }
-    }
-    if (event.target.className.indexOf("prev") > -1) {
-        if (screen.width > 560) {
-            document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: -300 });
-        } else {
-            document.querySelector(".contentdivcontent").scrollBy({ behavior: 'smooth', left: -100 });
-        }
+var maxscrollwidth = $('.contentdivcontent')[0].scrollWidth - $('.contentdivcontent')[0].clientWidth;
+console.log(maxscrollwidth);
+var scrollvalue = maxscrollwidth / 4;
+console.log(scrollvalue);
+function limitIscroll(e) {
+    var targetscroll = $('.contentdivcontent')[0].scrollLeft;
+    if (e.className.indexOf('next') > -1) {
+        $('.contentdivcontent').animate({
+            scrollLeft: targetscroll + scrollvalue
+        }, 800, () => {
+            if (targetscroll == $('.contentdivcontent')[0].scrollLeft) {
+                $('.contentdivcontent').animate({
+                    scrollLeft: 0
+                }, 800)
+            }
+        })
+    } else {
+        $('.contentdivcontent').animate({
+            scrollLeft: targetscroll - scrollvalue
+        }, 800, () => {
+            if (targetscroll == $('.contentdivcontent')[0].scrollLeft) {
+                $('.contentdivcontent').animate({
+                    scrollLeft: maxscrollwidth
+                }, 800)
+            }
+        })
     }
 }
 
@@ -288,7 +267,6 @@ document.querySelector(".contentdivcontent").addEventListener("scroll", function
     targetscroll = document.querySelector(".contentdivcontent").scrollLeft;
     document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-next").style.right = (Number(nextnum.split("px")[0]) - targetscroll) + "px";
     document.querySelector(".contentdivlimitTime .contentdivcontent .carousel-control-prev").style.left = (Number(prevnum.split("px")[0]) + targetscroll) + "px";
-
 })
 
 var d = new Date();
