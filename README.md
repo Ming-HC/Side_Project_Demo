@@ -7,7 +7,7 @@
   <br />
   <br />
   <h1>Dynamic_Demo:</h1>
-    <p><a href="https://forum-demo-0512-qy2ufzf3yq-de.a.run.app/">DynamicProject</a></p>
+    <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">DynamicProject</a></p>
     <span>僅會員註冊登入及討論區，製作中，多bug，預計每週五更新</span>
   
   
