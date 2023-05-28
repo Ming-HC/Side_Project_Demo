@@ -1,16 +1,13 @@
 # My Side Project
-  <h1>Static_Demo:</h1>
-    <h3>E-commerce_Static_practices: </h3>
+  <h1>動態網站作品:</h1>
+    <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <h1>靜態網頁作品:</h1>
+    <h3>電商網站練習: </h3>
     <p><a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
-  <br />
-  <br />
-  <br />
-  <br />
-  <h1>Dynamic_Demo:</h1>
-    <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">DynamicProject</a></p>
-    <span>僅會員註冊登入及討論區，預計每週五更新</span>
-  
-  
   <hr />
   <h3>資料、圖片來源：</h3>
   <ul>
