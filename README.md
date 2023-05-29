@@ -8,7 +8,7 @@
       後端：Node.js, MySQL, GCP
       後端框架：Node.js Express
       串接API：Google登入API</pre>
-    <p>功能說明：</p>
+    <p>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</p>
     <span>前端：</span>
     <ul>
       <li>會員註冊使用正則表達式偵測輸入的內容</li>
