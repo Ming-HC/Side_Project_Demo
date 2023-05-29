@@ -1,6 +1,7 @@
 # My Side Project
   <h1>動態網站作品:</h1>
     <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
+    <p>提供測試會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊，請勿使用真實資料！</p>
     <pre>
     網站架構：
       前端：Html, Css, Bootstrap, JavaScript, jQuery
@@ -26,7 +27,6 @@
       <li>部分api url使用正則表達式處理</li>
     </ul>
     <p>階段計畫：目前網站架構使用後端渲染網頁改為使用前端框架React，預計花費1~2周。</p>
-    <p>提供會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊，請勿使用真實資料！</p>
     <p>此作品為於台中資展國際前端工程師班的結訓團體專題，將個人負責部分的網站會員註冊登入和討論區部署於GCP，做持續維護及延伸。</p>
   <br />
   <br />
