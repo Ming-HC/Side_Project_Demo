@@ -8,7 +8,7 @@
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/542217121c587f8c51f5830610f06df68ddd5047/login.png" alt="login_page_image" style="width: 45%;" />
   </div>  
   <pre>
-    網站架構：
+  使用技術：
       前端：Html, Css, Bootstrap, JavaScript, jQuery
       後端：Node.js, MySQL, GCP
       後端框架：Node.js Express
