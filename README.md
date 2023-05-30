@@ -1,6 +1,7 @@
 # My Side Project
   <h1>動態網站作品:</h1>
     <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
+    <p>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</p>
     <p>提供測試會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊，請勿使用真實資料！</p>
     <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/80b4cda9e8cfb934f8fa440790b9303db8dabbc0/forum_index.png" alt="forum_index_image" style="width: 50%;" />
@@ -12,7 +13,6 @@
       後端：Node.js, MySQL, GCP
       後端框架：Node.js Express
       串接API：Google登入API</pre>
-    <p>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</p>
     <span>前端：</span>
     <ul>
       <li>會員註冊使用正則表達式偵測輸入的內容</li>
