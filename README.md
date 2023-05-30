@@ -2,7 +2,8 @@
   <h1>動態網站作品:</h1>
     <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
     <p>提供測試會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊，請勿使用真實資料！</p>
-    ![image](https://github.com/Ming-HC/Side_Project_Demo/blob/2c5ee9952c1ae07120330b8a1eda0d1b2ecfec1a/forum_index.png)
+    <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/2c5ee9952c1ae07120330b8a1eda0d1b2ecfec1a/forum_index.png" />
+    <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/d247377798bfb5648ee93f450bb8fed70402074a/login.png" />
     <pre>
     網站架構：
       前端：Html, Css, Bootstrap, JavaScript, jQuery
