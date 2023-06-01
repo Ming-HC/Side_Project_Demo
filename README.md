@@ -2,7 +2,7 @@
   <h1>動態網站作品:</h1>
     <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
     <p><a href="https://forum-react-demo-qy2ufzf3yq-de.a.run.app/forum">討論區(React版本) (進行中)</a></p>
-    <p>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後分離的模式，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成部分頁面及功能可能無法正常運行。</p>
+    <p>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後分離的模式，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成，部分頁面及功能可能無法正常運行。</p>
     <p>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</p>
     <p>提供測試會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊，請勿使用真實資料！</p>
   <div style="display: flex; justify-content: space-between;">
