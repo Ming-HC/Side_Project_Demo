@@ -16,14 +16,14 @@
       後端：Node.js, MySQL, GCP
       後端框架：Node.js Express
       串接API：Google登入API</pre>
-    <span>前端：</span>
+  前端功能：
     <ul>
       <li>會員註冊使用正則表達式偵測輸入的內容</li>
       <li>會員註冊登入前端送出前將密碼使用base64加密再送出</li>
       <li>上傳圖片即使顯示</li>
       <li>討論區上傳多張來源路徑不同的圖片</li>
     </ul>
-    <span>後端：</span>
+  <p>後端功能：</p>
     <ul>
       <li>使用Node.js ejs於渲染前端網頁</li>
       <li>使用Node.js session於會員登入功能</li>
