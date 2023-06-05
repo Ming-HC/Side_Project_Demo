@@ -38,8 +38,9 @@
   <br />
   <br />
   <h1>靜態網頁作品:</h1>
-    <h3>電商網站練習: </h3>
-    <p><a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
+    <p>電商網站練習: <a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
+    <p><a href="https://ming-hc.github.io/BinanceApi/">BinanceApi</a></p>
+    
   <hr />
   <h3>資料、圖片來源：</h3>
   <ul>
