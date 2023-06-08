@@ -35,6 +35,7 @@
     </ul>
     <br />
     <p>此作品為於台中資展國際前端工程師班的結訓團體專題，將個人負責部分的網站會員註冊登入和討論區部署於GCP，做持續維護及延伸。</p>
+    <a href="https://github.com/Ming-HC/MFEE35_finally_project">台中資展國際前端工程師班結訓團體專題GitHub</a>
   <br />
   <br />
   <h1>靜態網頁作品:</h1>
