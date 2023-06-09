@@ -4,7 +4,7 @@
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/80b4cda9e8cfb934f8fa440790b9303db8dabbc0/forum_index.png" alt="forum_index_image" style="width: 50%;" />
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/542217121c587f8c51f5830610f06df68ddd5047/login.png" alt="login_page_image" style="width: 45%;" />
   </div>
-    <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a></p>
+    <p><a href="https://ejs.mingspace.website/">討論區</a></p>
     <p><a href="https://forum-react-demo-qy2ufzf3yq-de.a.run.app/forum">討論區(React版本) (進行中)</a></p>
     <p>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後端分離，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成，部分頁面及功能可能無法正常運行。</p>
     <p>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</p>
