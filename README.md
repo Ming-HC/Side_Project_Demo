@@ -26,7 +26,7 @@
   <p>後端功能：</p>
     <ul>
       <li>使用Node.js ejs於渲染前端網頁</li>
-      <li>使用Node.js session於會員登入功能</li>
+      <li>使用Node.js express-session於會員登入功能</li>
       <li>使用Node.js crypto於會員密碼/Google token，加密後儲存進資料庫</li>
       <li>使用Node.js multer於網站上傳圖片</li>
       <li>使用Node.js fs於延伸上傳圖片自定義名稱</li>
