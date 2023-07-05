@@ -39,13 +39,15 @@
   <br />
   <br />
   <h1>靜態網頁作品:</h1>
+    <p></p><a href="https://demo.mingspace.website/">Dashboard-demo</a> 進行中，使用：React、TypeScript、Airbnb、HighCharts。(<a href="https://github.com/Ming-HC/Dashboard-demo">GitHub</a>)</p>
+    <p><a href="https://github.com/Ming-HC/Counter-demo">Counter-demo</a>使用：React Material UI(Button Group)</p>
+    <br />
     <div style="display: flex; justify-content: space-between;">
       <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/8d9a17d0e5f3d5b17abb3b9c5397b583a2a924f5/3CHouse.png" alt="3CHouse.png" style="width: 50%;" />
       <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/1005c437f833d50a02779bd61eaee2a46a04aa81/binanceapi.png" alt="binanceapi.png" style="width: 49%;" />
     </div>
     <p>電商網站練習: <a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
     <p><a href="https://ming-hc.github.io/BinanceApi/">BinanceApi</a></p>
-    
   <hr />
   <h3>資料、圖片來源：</h3>
   <ul>
