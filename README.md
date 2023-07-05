@@ -40,7 +40,7 @@
   <br />
   <h1>靜態網頁作品:</h1>
     <p></p><a href="https://demo.mingspace.website/">Dashboard-demo</a> 進行中，使用：React、TypeScript、Airbnb、HighCharts。(<a href="https://github.com/Ming-HC/Dashboard-demo">GitHub</a>)</p>
-    <p><a href="https://github.com/Ming-HC/Counter-demo">Counter-demo</a> 使用：React Material UI(Button Group)。</p>
+    <p><a href="https://github.com/Ming-HC/Counter-demo">Counter-demo</a> 使用：React、Material UI(Button Group)。</p>
     <br />
     <div style="display: flex; justify-content: space-between;">
       <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/8d9a17d0e5f3d5b17abb3b9c5397b583a2a924f5/3CHouse.png" alt="3CHouse.png" style="width: 50%;" />
