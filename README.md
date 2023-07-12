@@ -4,7 +4,6 @@
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/80b4cda9e8cfb934f8fa440790b9303db8dabbc0/forum_index.png" alt="forum_index_image" style="width: 50%;" />
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/542217121c587f8c51f5830610f06df68ddd5047/login.png" alt="login_page_image" style="width: 45%;" />
   </div>
-  <div style="height: 300px; overflow: auto;">
   <p><a href="https://ejs.mingspace.website/">討論區</a>　｜　<a href="https://react.mingspace.website/forum">討論區(React版本) (進行中)</a></p>
   <h6>使用技術：</h6>
   <ul>
@@ -41,17 +40,16 @@
     <li>部分api url使用正則表達式處理</li>
   </ul>
   </details>
-  </div>
   <h1>靜態網頁作品:</h1>
     <p></p><a href="https://demo.mingspace.website/">Dashboard-demo</a> 使用技術：React、TypeScript、Airbnb、HighCharts。(<a href="https://github.com/Ming-HC/Dashboard-demo">GitHub</a>)</p>
     <p><a href="https://github.com/Ming-HC/Counter-demo">Counter-demo</a> 使用技術：React、Material UI(Button Group)。</p>
-    <br />
+    <p><a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a>(電商網站練習)</p>
+    <p><a href="https://ming-hc.github.io/BinanceApi/">BinanceApi</a></p>
     <div style="display: flex; justify-content: space-between;">
       <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/8d9a17d0e5f3d5b17abb3b9c5397b583a2a924f5/3CHouse.png" alt="3CHouse.png" style="width: 50%;" />
       <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/1005c437f833d50a02779bd61eaee2a46a04aa81/binanceapi.png" alt="binanceapi.png" style="width: 49%;" />
     </div>
-    <p>電商網站練習: <a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">My_StaticProject</a></p>
-    <p><a href="https://ming-hc.github.io/BinanceApi/">BinanceApi</a></p>
+    
   <hr />
   <h3>資料、圖片來源：</h3>
   <ul>
