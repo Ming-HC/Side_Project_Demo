@@ -9,7 +9,6 @@
   <ul>
    <li>前端：Html, Css, Bootstrap, JavaScript, jQuery</li>
    <li>後端：Node.js, MySQL, GCP</li>
-   <li>後端框架：Node.js Express</li>
    <li>串接API：Google登入API</li>
   </ul>
   <details><summary><b>網站說明：(點擊展開更多說明!)</b></summary>
