@@ -12,7 +12,7 @@
    <li>後端框架：Node.js Express</li>
    <li>串接API：Google登入API</li>
   </ul>
-  <details><summary><b>網站說明：(click me!)</b></summary>
+  <details><summary><b>網站說明：(點擊展開更多說明!)</b></summary>
   <ul>
     <li>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</li>
     <li>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後端分離，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成，部分頁面及功能可能無法正常運行。</li>
@@ -21,7 +21,7 @@
     <li><a href="https://github.com/Ming-HC/MFEE35_finally_project">台中資展國際前端工程師班結訓團體專題GitHub</a> (經團隊討論皆同意後改為公開)</li>
   </ul>
   </details>
-  <details><summary><b>前/後端功能說明： (click me!)</b></summary>
+  <details><summary><b>前/後端功能說明： (點擊展開更多說明!)</b></summary>
   <h6>前端功能：</h6>
   <ul>
     <li>會員註冊使用正則表達式偵測輸入的內容</li>
