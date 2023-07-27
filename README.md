@@ -1,9 +1,12 @@
 # My Side Project
   <h1>動態網站作品:</h1>
-  <div style="display: flex; justify-content: space-between;">
+<!--   <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/80b4cda9e8cfb934f8fa440790b9303db8dabbc0/forum_index.png" alt="forum_index_image" style="width: 50%;" />
     <img src="https://github.com/Ming-HC/Side_Project_Demo/blob/542217121c587f8c51f5830610f06df68ddd5047/login.png" alt="login_page_image" style="width: 45%;" />
-  </div>
+  </div> -->
+
+  https://github.com/Ming-HC/Side_Project_Demo/assets/58895441/aa5ab223-b620-470b-b5a6-9c7b9b172d7e
+
   <p><a href="https://ejs.mingspace.website/">討論區</a>　｜　<a href="https://react.mingspace.website/forum">討論區(React版本) (進行中)</a></p>
   <h6>使用技術：</h6>
   <ul>
