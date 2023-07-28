@@ -43,8 +43,8 @@
   </ul>
   </details>
   <h1>靜態網頁作品:</h1>
-    <p></p><a href="https://demo.mingspace.website/">Dashboard-demo</a> 使用技術：React、TypeScript、Airbnb、HighCharts。(<a href="https://github.com/Ming-HC/Dashboard-demo">GitHub</a>)</p>
-    <p><a href="https://github.com/Ming-HC/Counter-demo">Counter-demo</a> 使用技術：React、Material UI(Button Group)。</p>
+    <p></p><a href="https://ming-hc.github.io/Dashboard-demo/">Dashboard-demo</a> 使用技術：React、TypeScript、Airbnb、HighCharts。(<a href="https://github.com/Ming-HC/Dashboard-demo">GitHub</a>)</p>
+    <p><a href="https://ming-hc.github.io/Counter-demo/">Counter-demo</a> 使用技術：React、Material UI(Button Group)。(<a href="https://github.com/Ming-HC/Counter-demo">GitHub</a>)</p>
     <p><a href="https://ming-hc.github.io/Side_Project_Demo/MFEE35_StaticProject/">電商網站練習</a></p>
     <p><a href="https://ming-hc.github.io/BinanceApi/">BinanceApi</a></p>
 <!--     <div style="display: flex; justify-content: space-between;">
