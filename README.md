@@ -58,3 +58,6 @@
     <li><a href="https://24h.pchome.com.tw/">PChome 24h購物</a></li>
     <li><a href="https://www.w3schools.com/">W3School</a></li>
   </ul>
+  <hr />
+  <h3>其餘小程式：</h3>
+  <p><a href="https://github.com/Ming-HC/AutoShutdown">Windows AutoShutdown</a></p>
