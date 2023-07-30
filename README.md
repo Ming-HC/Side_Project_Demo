@@ -7,7 +7,7 @@
 
   https://github.com/Ming-HC/Side_Project_Demo/assets/58895441/aa5ab223-b620-470b-b5a6-9c7b9b172d7e
 
-  <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a>　｜　<a href="https://react.mingspace.website/forum">討論區(React版本) (進行中)</a></p>
+  <p><a href="https://forum-demo-qy2ufzf3yq-de.a.run.app">討論區</a>　｜　<a href="https://forum-react-demo-qy2ufzf3yq-de.a.run.app">討論區(React版本) (進行中)</a></p>
   <h6>使用技術：</h6>
   <ul>
    <li>前端：Html, Css, Bootstrap, JavaScript, jQuery</li>
