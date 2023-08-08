@@ -7,7 +7,8 @@
 
   https://github.com/Ming-HC/Side_Project_Demo/assets/58895441/aa5ab223-b620-470b-b5a6-9c7b9b172d7e
 
-  <p><a href="https://ejs.mingspace.website/">討論區</a>　｜　<a href="https://ming-hc.github.io/Forum-React/#/forum">討論區(React版本) (進行中)</a></p>
+  <!-- <p><a href="https://ejs.mingspace.website/">討論區</a>　｜　<a href="https://ming-hc.github.io/Forum-React/#/forum">討論區(React版本) (進行中)</a></p> -->
+  <p><a href="https://ejs.mingspace.website/">討論區</a></p>
   <h6>使用技術：</h6>
   <ul>
    <li>前端：Html, Css, Bootstrap, JavaScript, jQuery</li>
@@ -17,7 +18,7 @@
   <details><summary>$\color{red}{網站說明：(點擊展開更多說明！)}$</summary>
   <ul>
     <li>功能說明：網站會員註冊登入，討論區文章增查修刪/分類/分頁(20筆/頁)/瀏覽數/回覆數/最新回覆</li>
-    <li>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後端分離，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成，部分頁面及功能可能無法正常運行，2023/08/03將原部署於GCP更改為GitHub Pages。</li>
+    <!-- <li>討論區React版本說明：目前正將原本作品使用ejs的部分改為使用前端React，並為前後端分離，原版本設定Node.js cors後React版本串接原版本api取得資料，React版本尚未完成，部分頁面及功能可能無法正常運行，2023/08/03將原部署於GCP更改為GitHub Pages。</li> -->
     <li>提供測試會員供登入使用，使用者名稱：testuser，密碼：testuser。也可自行註冊。</li>
     <li>此作品為於台中資展國際前端工程師班的結訓團體專題，將個人負責部分的網站會員註冊登入和討論區部署於GCP，做持續維護及延伸。(至2023/07/30)</li>
     <li>2023/07/30 網站搬家嚕，接下來架站在DigitalOcean Droplet。</li>
